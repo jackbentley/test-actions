@@ -1,0 +1,15 @@
+name: Actions Test
+
+on:
+  create: ~
+  pull_request:
+    types: [edited, opened, reopened, ready_for_review, review_requested, closed]
+  pull_request_review: ~
+  pull_request_review_comment: ~
+
+jobs:
+  test:
+    name: Test Output
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{ github.event.action }}
