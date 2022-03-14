@@ -9,7 +9,7 @@ on:
 
 jobs:
   test:
-    name: Test Output
+    name: Test Debug
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ github.event.action }}
+      - uses: hmarr/debug-action@v2
