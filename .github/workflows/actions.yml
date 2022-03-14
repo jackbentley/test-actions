@@ -3,9 +3,10 @@ name: Actions Test
 on:
   create: ~
   pull_request:
-    types: [edited, opened, reopened, ready_for_review, review_requested, closed]
+    types: [edited, opened, reopened, ready_for_review, review_requested, review_request_removed, closed]
   pull_request_review: ~
   pull_request_review_comment: ~
+  issue_comment: ~
 
 jobs:
   test:
